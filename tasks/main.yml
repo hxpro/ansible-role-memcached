@@ -1,0 +1,8 @@
+---
+- name: Import setup tasks
+  import_tasks: setup.yml
+  tags: setup
+
+- name: Import config tasks
+  import_tasks: config.yml
+  tags: config
