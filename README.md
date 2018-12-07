@@ -11,8 +11,8 @@ CentOS 7
 Role Variables
 --------------
 
-memcached_cachesize: 100
-memcached_bind_ip: 127.0.0.1
+    memcached_cachesize: 100
+    memcached_bind_ip: 127.0.0.1
 
 Dependencies
 ------------
