@@ -9,6 +9,7 @@ install:
   - pip install ansible
   - pip install docker-py==1.9.0
   - pip install molecule
+  - ansible-galaxy install hxpro.bootstrap
   - mv ../ansible-role-memcached ../hxpro.memcached
 
 script:
