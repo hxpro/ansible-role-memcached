@@ -1,0 +1,6 @@
+---
+- name: Converge
+  hosts: all
+  roles:
+    - role: hxpro.bootstrap
+    - role: hxpro.memcached
