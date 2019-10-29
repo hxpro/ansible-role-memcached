@@ -6,5 +6,5 @@
 - name: memcached service
   systemd:
     name: memcached
-    enabled: yes
+    enabled: true
     state: started
