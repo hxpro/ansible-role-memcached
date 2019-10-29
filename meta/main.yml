@@ -1,3 +1,4 @@
+---
 galaxy_info:
   author: Matěj Koudelka
   description: high-performance memory object caching system
