@@ -6,7 +6,8 @@ memcached - high-performance memory object caching system
 Requirements
 ------------
 
-CentOS 7
+ - CentOS 7
+ - The ipaddr filter requires python's netaddr be installed on the ansible controller
 
 Role Variables
 --------------
