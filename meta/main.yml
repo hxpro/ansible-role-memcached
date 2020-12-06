@@ -1,6 +1,7 @@
 ---
 galaxy_info:
   author: Matěj Koudelka
+  role_name: memcached
   description: high-performance memory object caching system
 
   license: license (WTFPL)
