@@ -1,16 +1,12 @@
 ---
 language: python
-python: 3.7
+python: 3.9
 
 services:
   - docker
 
 install:
-  - pip install ansible
-  - pip install docker-py==1.9.0
-  - pip install molecule
-  - pip install netaddr
-  - mv ../ansible-role-memcached ../hxpro.memcached
+  - pip install ansible ansible-lint molecule[docker] testinfra netaddr
 
 script:
   - molecule test

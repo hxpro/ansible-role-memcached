@@ -3,8 +3,11 @@ dependency:
   name: galaxy
 driver:
   name: docker
-lint:
-  name: yamllint
+lint: |
+  set -e
+  yamllint molecule/default/
+  ansible-lint molecule/default/converge.yml
+  flake8 molecule/default/
 platforms:
   - name: hxpro-memecached
     image: hxpro/docker-centos
@@ -15,9 +18,5 @@ platforms:
     pre_build_image: true
 provisioner:
   name: ansible
-  lint:
-    name: ansible-lint
 verifier:
   name: testinfra
-  lint:
-    name: flake8
